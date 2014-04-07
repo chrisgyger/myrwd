@@ -1,0 +1,77 @@
+/**
+ * ===============================================================================
+ *  style.css -- Glbal styles for the MyRWD website
+ * ===============================================================================
+ *
+ * Created March 23, 2014
+ *
+ * Authored by Chris Gyger
+ *
+ */
+ 
+ /* ----- Basic styling ----- */
+ 
+ body{
+  background-color: lightblue;
+}
+
+#page-wrapper{
+  background-color: white;
+  max-width: 960px;
+  margin: auto;
+}
+
+#content{
+  background-color: #f7f2da;
+  padding: 0 1em 0 1em;
+  margin: 0 0 10px 0;
+}
+
+nav{
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul{
+  padding: 3px 10px;
+  list-style-type: none;
+}
+
+/* ----- Ad Styling ----- */
+
+.wide-skyscaper-ad{
+  width: 160px;
+  height: 600px;
+  background-color: silver;
+}
+
+/* ----- Three-Column Fixed Layout -----*/
+
+#page-wrapper{
+  width: 960px;
+}
+
+
+ nav{
+  float: left;
+  width: 175px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+}
+#content{
+  float: left;
+  width: 625px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+}
+
+#sidebar{
+  float: left;
+  width:160px;
+  box-sizing: border-box;
+}
+
+fotter{
+  clear: both;
+}
