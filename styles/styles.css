@@ -31,6 +31,7 @@ nav{
   background-color: gray;
   margin: 0;
   padding: 0;
+
 }
 
 nav ul{
@@ -46,22 +47,28 @@ nav ul{
   background-color: silver;
 }
 
+/* ----- One-Column Mobile Layout -----*/
+
+#fluid-columns, nav, #content, #sidebar{
+  width: 100%;
+}
+
 /* ----- Three-Column Fixed Layout -----*/
 
 #page-wrapper{
-  width: 960px;
+  width: 100%;
 }
 
 
  nav{
   float: left;
-  width: 175px;
+  width: 21.875%;
   -moz-box-sizing:border-box;
   box-sizing: border-box;
 }
 #content{
   float: left;
-  width: 625px;
+  width: 78.125%;
   -moz-box-sizing:border-box;
   box-sizing: border-box;
 }
@@ -73,6 +80,53 @@ nav ul{
   box-sizing: border-box;
 }
 
-fotter{
+footer{
   clear: both;
+}
+
+#fluid-columns{
+  max-width: 800px;
+}
+
+@media all and (min-width: 525px){
+ /* ----- Two-Column Fluid Layout -----*/
+  #page-wrapper{
+  width: 100%;
+}
+
+
+ nav{
+  float: left;
+  width: 21.875%;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+#content{
+  float: left;
+  width: 78.125%;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  float: left;
+  width:160px;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+footer{
+  clear: both;
+}
+}
+
+@media all and (min-width: 960px){
+  /*Three-Column Fixed Layout*/
+  #page-wrapper{
+  width: 960px;
+  }
+  #fluid-columns{
+  width: 800px;
+  }
+
 }
